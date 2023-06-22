@@ -27,6 +27,7 @@ header {
 }
 .coin-image {
   width: 9.37em;
+  padding-bottom: 2em;
 }
 h1 {
   font-size: 1.6em;
