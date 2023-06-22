@@ -25,3 +25,15 @@ header {
   align-items: center;
   flex-direction: column;
 }
+.coin-image {
+  width: 9.37em;
+}
+h1 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+label {
+  display: block;
+  font-weight: 600;
+}
