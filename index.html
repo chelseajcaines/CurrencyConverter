@@ -3,21 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Currency Converter</title>
+
+    <!--style sheet-->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <main>
+      <!--coin image and app title-->
       <header>
         <img src="coinimage.png" class="coin-image" />
         <h1>Currency Converter</h1>
       </header>
+
+      <!--currency amount input-->
       <label for="amount">Amount:</label>
       <input type="number" id="amount" value="100" />
+
+      <!--currency selector dropdown boxes-->
       <section class="dropdowns">
         <select id="from-currency-select"></select>
         <select id="to-currency-select"></select>
       </section>
+
+      <!--convert button and area for conversion result to appear-->
       <button id="convert-button">Convert</button>
       <p id="result"></p>
     </main>
