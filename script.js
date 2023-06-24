@@ -17,6 +17,30 @@ currencies.forEach((currency) => {
   toDropDown.add(option);
 });
 
-//default currencies
+//default currency values
 fromDropDown.value = "CAD";
 toDropDown.value = "USD";
+
+let convertCurrency = () => {
+  //Create References
+  const amount = document.querySelector("#amount").value;
+  const fromCurrency = fromDropDown.value;
+  const toCurrency = toDropDown.value;
+
+  //If amount input field is not empty
+  if (amount.length != 0) {
+    fetch(api)
+      .then((resp) => resp.json())
+      .then((data) => {
+        let fromExchangeRate = data.conversion_rates[fromCurrency];
+        let toExchangeRate = data.conversion_rates[toCurrency];
+        const convertedAmount = (amount / fromExchangeRate) * toExchangeRate;
+        result.innerHTML = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(
+          2
+        )} ${toCurrency}`;
+      });
+    //if convert button is clicked with no values entered in
+  } else {
+    alert("Please fill in the amount");
+  }
+};
