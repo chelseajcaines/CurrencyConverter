@@ -52,7 +52,7 @@ input#amount {
 }
 /*what the currency amount will look like while active (after clicking and cursor appears)*/
 input#amount:focus {
-  color: #9fa8a2;
+  color: #02002c;
   border-color: #02002c;
 }
 .dropdowns {
@@ -77,6 +77,11 @@ select {
   background-color: #3aa724;
   color: #ffffff;
 }
+select:hover {
+  cursor: pointer;
+  background-color: #1d6d0d;
+  color: #fff;
+}
 select option {
   background-color: #ffffff;
   color: #02002c;
@@ -90,12 +95,12 @@ button {
   border-radius: 0.3em;
   color: #ffffff;
   font-weight: 600;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
 }
 button:hover {
-  background-color: #fff;
-  border-color: #3aa724;
-  border: 2px;
+  background-color: #1d6d0d;
+  color: #fff;
+  cursor: pointer;
 }
 /*hashtag is used to select an id, period is used to select class, just type the element to select actual element*/
 #result {
