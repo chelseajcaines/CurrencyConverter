@@ -90,6 +90,12 @@ button {
   border-radius: 0.3em;
   color: #ffffff;
   font-weight: 600;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: #fff;
+  border-color: #3aa724;
+  border: 2px;
 }
 /*hashtag is used to select an id, period is used to select class, just type the element to select actual element*/
 #result {
